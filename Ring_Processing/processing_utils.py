@@ -179,4 +179,5 @@ def fit_lorentzian_frq(frq, spectrum, peak_index, window_THz=0.1):
         
         return popt, x_data, y_data_mW, pcov
     except RuntimeError:
+
         return None, x_data, y_data_mW
